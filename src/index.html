@@ -3,21 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link href="./css/style.css">
     <title>我的装修公司</title>
 </head>
 <body>
     <header>
-        <div class="head">
-
+        <div class="heads">
+            <div class="head">
+                <div class="head_left left">
+                    <a href="#">
+                        <img src="./images/logo.png" alt="logo">
+                        <span>家装从这里开始</span>
+                    </a>
+                </div>
+                <div class="head_nav left">
+                    <ul>
+                        <li>
+                            <a href="#">
+                            <span>HOME</span>
+                            <span>首页</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <span>Design case</span>
+                            <span>设计案例</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <span>Style style</span>
+                            <span>装修风格</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <span>Soft loading</span>
+                            <span>软装攻略</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <span>Design team</span>
+                            <span>设计团队</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <span>Construction</span>
+                            <span>施工团队</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <span>Brand power</span>
+                            <span>品牌力量</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="head_right left">
+                    <a href="#" onclick="get(this)">注册</a>
+                    <a href="#" class="chacked" onclick="get(this)">登录</a>
+                </div>
+            </div>
         </div>
         <div class="banner"><img src="./images/banner.png" alt="banner"></div>
-        <div class="banner_text"></div>
-        <div class="advantage"></div>
+        <div class="banner_text">
+            <span>QITUWANG  DESIGN</span>
+            <h2>简约北欧</h2>
+        </div>
+        <ul class="advantage">
+            <li>
+                <img src="./images/advantage_01.png" />
+                <h5>专业施工流程</h5>
+                <span>简约、自然、人性化的特点</span>
+            </li>
+            <li>
+                <img src="./images/advantage_02.png" />
+                <h5>尊享VIP服务</h5>
+                <span>简约、自然、人性化的特点</span>
+            </li>
+            <li>
+                <img src="./images/advantage_03.png" />
+                <h5>性价比超高</h5>
+                <span>简约、自然、人性化的特点</span>
+            </li>
+            <li>
+                <img src="./images/advantage_04.png" />
+                <h5>时间精准把控</h5>
+                <span>简约、自然、人性化的特点</span>
+            </li>
+        </ul>
     </header>
     <section>
 
     </section>
     <footer></footer>
+
+
+    <script>
+        let status = 1;
+        function get(e) {
+            e.classList.add('chacked');
+            if(e.previousElementSibling){
+                e.previousElementSibling.classList.remove('chacked');
+            }else{
+                e.nextElementSibling.classList.remove('chacked');
+            }
+        }
+    </script>
 </body>
 </html>

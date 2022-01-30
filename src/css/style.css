@@ -2,3 +2,141 @@
     padding: 0;
     margin: 0;
 }
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+header{
+    width: 100%;
+    position: relative;
+    padding-bottom: 200px;
+}
+header .heads{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(48,09,12,0.1);
+}
+header .heads .head{
+    overflow: hidden;
+    width: 1280px;
+    margin: 0 auto;
+}
+header .heads .head .head_left{
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    margin-right: 40px;
+}
+header .heads .head .head_left a span{
+    letter-spacing: 8px;
+    color: #8a5742;
+}
+header .heads .head .head_nav ul{
+    overflow: hidden;
+}
+header .heads .head .head_nav ul li{
+    float: left;
+    text-align: center;
+    padding: 30px 20px;
+}
+header .heads .head .head_nav ul li a{
+    overflow: hidden;
+}
+header .heads .head .head_nav ul li:hover{
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: 3px solid orange;
+}
+header .heads .head .head_nav ul li span:first-child{
+    color: #ae9c92;
+    display: block;
+}
+header .heads .head .head_nav ul li span:last-child{
+    color: #8a5742;
+    display: block;
+}
+header .heads .head .head_right{
+    margin-top: 10px;
+}
+header .heads .head .head_right a{
+    display: inline-block;
+    border: 1px dashed #8a5742;
+    padding: 2px 8px;
+    margin-right: 10px;
+    color: #8a5742;
+    font-size: 12px;
+    border-radius: 5px;
+}
+header .heads .head .head_right .chacked{
+    color: black;
+    background-color: #ae9c92;
+}
+header .banner img{
+    width: 100%;
+}
+header .banner_text{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: rgba(230,230,230,0.6);
+    border-radius: 20px;
+    padding: 20px;
+    color: #b56728;
+}
+header .banner_text span{
+    font-size: 48px;
+}
+header .banner_text h2{
+    font-size: 56px;
+}
+header .advantage{
+    background-color: rgba(186,150,130,0.7);
+    overflow: hidden;
+    display: inline-block;
+    width: 1100px;
+    padding: 30px 100px;
+    bottom: 5%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+}
+header .advantage li{
+    float: left;
+    margin-right: 140px;
+    text-align: center;
+}
+header .advantage li:last-child{
+    margin-right: 0;
+}
+header .advantage li img{
+    margin-bottom: 10px;
+    height: 60px;
+}
+header .advantage li h5{
+    color: white;
+    border-left: 3px solid #f29b76;
+    border-right: 3px solid #f29b76;
+    width: 120px;
+    font-size: 18px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+header .advantage li span{
+    color: white;
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+}

@@ -1,2 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap.min.js';
+
 require('./css/style.css');
-require('./index');
+require('./css/index.scss');

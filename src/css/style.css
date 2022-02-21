@@ -14,129 +14,653 @@ a{
 .right{
     float: right;
 }
-header{
-    width: 100%;
-    position: relative;
-    padding-bottom: 200px;
+@media screen and (min-width: 1200px) {
+    header{
+        width: 100%;
+        position: relative;
+        padding-bottom: 100px;
+    }
+    header .heads{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 112px;
+        background-color: rgba(48,09,12,0.1);
+    }
+    header .heads .head{
+        overflow: hidden;
+        width: 1280px;
+        margin: 0 auto;
+    }
+    header .heads .head .head_left{
+        width: 200px;
+        text-align: center;
+        padding: 20px;
+        margin-right: 40px;
+    }
+    header .heads .head .head_left a{
+        display: inline-block;
+    }
+    header .heads .head .head_left a span{
+        letter-spacing: 8px;
+        color: #8a5742;
+    }
+    header .heads .head .head_nav ul{
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+    header .heads .head .head_nav ul li{
+        float: left;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    header .heads .head .head_nav ul li a{
+        overflow: hidden;
+    }
+    header .heads .head .head_nav ul li:hover{
+        background-color: white;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-bottom: 3px solid orange;
+    }
+    header .heads .head .head_nav ul li span:first-child{
+        color: #ae9c92;
+        display: block;
+    }
+    header .heads .head .head_nav ul li span:last-child{
+        color: #8a5742;
+        display: block;
+    }
+    header .heads .head .head_right{
+        margin-top: 10px;
+    }
+    header .heads .head .head_right a{
+        display: inline-block;
+        border: 1px dashed #8a5742;
+        padding: 2px 8px;
+        margin-right: 10px;
+        color: #8a5742;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    header .heads .head .head_right .chacked{
+        color: black;
+        background-color: #ae9c92;
+    }
+    header .banner img{
+        width: 100%;
+    }
+    header .banner_text{
+        position: absolute;
+        top:40%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        background-color: rgba(230,230,230,0.6);
+        border-radius: 20px;
+        padding: 20px;
+        color: #b56728;
+    }
+    header .banner_text span{
+        font-size: 48px;
+    }
+    header .banner_text h2{
+        font-size: 56px;
+    }
+    header .advantage{
+        background-color: rgba(186,150,130,0.7);
+        overflow: hidden;
+        display: inline-block;
+        width: 1100px;
+        padding: 40px 100px;
+        bottom: -7%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        border-radius: 20px;
+    }
+    header .advantage li{
+        float: left;
+        margin-right: 75px;
+        text-align: center;
+    }
+    header .advantage li:last-child{
+        margin-right: 0;
+    }
+    header .advantage li img{
+        margin-bottom: 10px;
+        height: 60px;
+    }
+    header .advantage li h5{
+        color: white;
+        border-left: 3px solid #f29b76;
+        border-right: 3px solid #f29b76;
+        width: 120px;
+        font-size: 18px;
+        margin: 0 auto;
+        font-weight: 400;
+    }
+    header .advantage li span{
+        color: white;
+        margin-top: 10px;
+        display: block;
+        font-size: 14px;
+    }
+    section{
+        width: 1280px;
+        margin: 0 auto;
+    }
+    section .team .team_title{
+        color: #c28a60;
+        width: 550px;
+        margin: 0 auto;
+    }
+    section .team .team_title h3{
+        text-align: center;
+        letter-spacing: 5px;
+        margin-bottom: 25px;
+    }
+    section .team .team_title h3 span{
+        border-bottom: 4px solid #a68c82;
+        padding-bottom: 5px;
+    }
+    section .team .team_title p{
+        letter-spacing: 2px;
+    }
+    section .team .team_one{
+        padding: 20px 100px;
+        background: url("../images/team_bg01.png") no-repeat;
+        background-position: right;
+        background-size: contain;
+        overflow: hidden;
+    }
+    section .team .team_one img{
+        width: 500px;
+    }
+    section .team .team_one .team_contents{
+        margin-left: 125px;
+        padding-top: 50px;
+        overflow: hidden;
+        text-align: right;
+    }
+    section .team .team_one .team_contents p{
+        width: 410px;
+        font-size: 16px;
+        text-align: left;
+        letter-spacing: 2px;
+    }
+    section .team .team_one .team_contents h3{
+        color: #c28a60;
+        font-size: 20px;
+        padding: 8px 0;
+    }
+    section .team .team_one .team_contents h3:hover{
+        background: url("../images/team_title_bg01.png") no-repeat;
+        background-position: right;
+        background-size: contain;
+        transition: 1s;
+    }
+    .btn4 {
+        width: 100px;
+        height: 40px;
+        color: white;
+        background-color: #f29b76;
+        border-radius: 30px;
+        border: 3px solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: btn4Ani 2s linear infinite;
+    }
+    @keyframes btn4Ani {
+        0% {
+            width: 100px;
+            height: 40px;
+        }
+        30% {
+            width: 140px;
+            height: 56px;
+            transform: rotate(0deg);
+        }
+        40% {
+            width: 140px;
+            height: 56px;
+            transform: rotate(-5deg);
+        }
+        50% {
+            width: 140px;
+            height: 56px;
+            transform: rotate(5deg);
+        }
+        60% {
+            width: 140px;
+            height: 56px;
+            transform: rotate(-5deg);
+        }
+        70% {
+            width: 140px;
+            height: 56px;
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(0deg);
+            width: 100px;
+            height: 40px;
+        }
+    }
+    section .team .team_two{
+        padding: 20px 100px;
+        background: url("../images/team_bg02.png") no-repeat;
+        background-position: left;
+        background-size: contain;
+        overflow: hidden;
+    }
+    section .team .team_two img{
+        width: 500px;
+    }
+    section .team .team_two .team_contents{
+        margin-right: 125px;
+        padding-top: 50px;
+        overflow: hidden;
+        text-align: left;
+    }
+    section .team .team_two .team_contents p{
+        width: 410px;
+        font-size: 16px;
+        text-align: left;
+        letter-spacing: 2px;
+    }
+    section .team .team_two .team_contents h3{
+        color: #c28a60;
+        background-position: right;
+        font-size: 20px;
+        padding: 8px 0;
+    }
+    section .team .team_two .team_contents h3:hover{
+        background: url("../images/team_title_bg01.png") no-repeat;
+        background-position: left;
+        background-size: contain;
+        transition: 1s;
+    }
+    section .service{
+        text-align: center;
+        background-color: #f1f1f1;
+        overflow: hidden;
+        padding: 20px 50px;
+        margin-top: -1px;
+    }
+    section .service .service_title h3{
+        color: #ae7862;
+    }
+    section .service .service_title p{
+        color: #63321e;
+    }
+    section .service .service_title p span{
+        border-bottom: 3px solid #ae7862;
+        padding-bottom: 5px;
+    }
+    section .service ul li{
+        float: left;
+        margin-right: 20px;
+    }
+    section .service ul li:last-child{
+        margin-right: 0;
+    }
+    .view {
+        width: 350px;
+        height: 240px;
+        margin: 10px;
+        float: left;
+        border: 10px solid #fff;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        box-shadow: 1px 1px 2px #e6e6e6;
+        cursor: default;
+        background: #fff url(../images/case_01.png) no-repeat center center
+    }
+    .view .mask, .view .content {
+        width: 350px;
+        height: 240px;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0
+    }
+    .view img {
+        display: block;
+        position: relative
+    }
+    .view h2 {
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        font-size: 17px;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.8);
+        margin: 20px 0 0 0
+    }
+    .view p {
+        font-family: Georgia, serif;
+        font-style: italic;
+        font-size: 12px;
+        position: relative;
+        color: #fff;
+        padding: 10px 20px 20px;
+        text-align: center
+    }
+    .view a.info {
+        display: inline-block;
+        text-decoration: none;
+        padding: 7px 14px;
+        background: #000;
+        color: #fff;
+        text-transform: uppercase;
+        box-shadow: 0 0 1px #000
+    }
+    .view a.info:hover {
+        box-shadow: 0 0 5px #000
+    }
+    .view-fifth img {
+        transition: all 0.3s ease-in-out;
+    }
+    .view-fifth .mask {
+        background-color: rgba(0,0,0,0.6);
+        transform: translateX(-350px);
+        opacity: 1;
+        transition: all 0.4s ease-in-out;
+    }
+    .view-fifth h2{
+        background: rgba(255, 255, 255, 0.5);
+        color: #000;
+        box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
+    }
+    .view-fifth p{
+        opacity: 0;
+        color: white;
+        transition: all 0.2s linear;
+    }
+    .view-fifth:hover .mask {
+        transform: translateX(0px);
+    }
+    .view-fifth:hover img {
+        transform: translateX(350px);
+        transition-delay: 0.1s;
+    }
+    .view-fifth:hover p{
+        opacity: 1;
+        transition-delay: 0.4s;
+    }
+    section .service ul li a{
+        overflow: hidden;
+    }
+    section .service ul li img{
+        width: 350px;
+    }
+    section .service ul li a h4{
+        color: #63321e;
+        line-height: 38px;
+        font-size: 16px;
+    }
+    section .service ul li a h4 span{
+        border-bottom: 3px solid #ae7862;
+        padding-bottom: 3px;
+    }
+    section .case{
+        background: url("../images/case_bg.png") no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+    section .case .cases{
+        background-color: rgba(0,0,0,0.6);
+        padding-top: 60px;
+        padding-bottom: 50px;
+        color: white;
+    }
+    section .case .cases h2{
+        font-size: 38px;
+        letter-spacing: 2px;
+        line-height: 38px;
+    }
+    section .case .cases p{
+        font-size: 24px;
+        font-weight: 100;
+        line-height: 38px;
+        letter-spacing: 2px;
+    }
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+        max-width: 1280px;
+    }
+    footer{
+        padding: 50px 100px !important;
+        background-color: #94624d;
+    }
+    footer .row ul{
+        overflow: hidden;
+        border-right: 1px solid white;
+    }
+    footer .row ul li{
+        float: left;
+        margin-right: 90px;
+    }
+    footer .row ul li:last-child{
+        margin-right: 0;
+    }
+    footer .row a {
+        color: white;
+    }
+    footer .row ul li h3{
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    footer .row ul li a{
+        display: block;
+        line-height: 28px;
+    }
+    footer .row .contact{
+        margin-left: 50px;
+        overflow: hidden;
+    }
+    footer .row .contact .consultation{
+        float: left;
+    }
+    footer .row .contact .consultation .con_text{
+        margin-bottom: 20px;
+        display: block;
+    }
+    footer .row .contact .consultation a h2{
+        font-size: 38px;
+    }
+    footer .row .contact .consultation a p{
+        letter-spacing: 2px;
+    }
+    footer .row .contact .qrcode{
+        float: left;
+        margin-left: 80px;
+        color: white;
+    }
+    footer .row .contact .qrcode div{
+        width: 150px;
+        text-align: center;
+        line-height: 150px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        background-color: rgba(0,0,0,0.1);
+    }
+    footer .row .contact .qrcode span{
+        letter-spacing: 3px;
+    }
 }
-header .heads{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    background-color: rgba(48,09,12,0.1);
-}
-header .heads .head{
-    overflow: hidden;
-    width: 1280px;
-    margin: 0 auto;
-}
-header .heads .head .head_left{
-    width: 200px;
-    text-align: center;
-    padding: 20px;
-    margin-right: 40px;
-}
-header .heads .head .head_left a span{
-    letter-spacing: 8px;
-    color: #8a5742;
-}
-header .heads .head .head_nav ul{
-    overflow: hidden;
-}
-header .heads .head .head_nav ul li{
-    float: left;
-    text-align: center;
-    padding: 30px 20px;
-}
-header .heads .head .head_nav ul li a{
-    overflow: hidden;
-}
-header .heads .head .head_nav ul li:hover{
-    background-color: white;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-bottom: 3px solid orange;
-}
-header .heads .head .head_nav ul li span:first-child{
-    color: #ae9c92;
-    display: block;
-}
-header .heads .head .head_nav ul li span:last-child{
-    color: #8a5742;
-    display: block;
-}
-header .heads .head .head_right{
-    margin-top: 10px;
-}
-header .heads .head .head_right a{
-    display: inline-block;
-    border: 1px dashed #8a5742;
-    padding: 2px 8px;
-    margin-right: 10px;
-    color: #8a5742;
-    font-size: 12px;
-    border-radius: 5px;
-}
-header .heads .head .head_right .chacked{
-    color: black;
-    background-color: #ae9c92;
-}
-header .banner img{
-    width: 100%;
-}
-header .banner_text{
-    position: absolute;
-    top:40%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    background-color: rgba(230,230,230,0.6);
-    border-radius: 20px;
-    padding: 20px;
-    color: #b56728;
-}
-header .banner_text span{
-    font-size: 48px;
-}
-header .banner_text h2{
-    font-size: 56px;
-}
-header .advantage{
-    background-color: rgba(186,150,130,0.7);
-    overflow: hidden;
-    display: inline-block;
-    width: 1100px;
-    padding: 30px 100px;
-    bottom: 5%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    border-radius: 20px;
-}
-header .advantage li{
-    float: left;
-    margin-right: 140px;
-    text-align: center;
-}
-header .advantage li:last-child{
-    margin-right: 0;
-}
-header .advantage li img{
-    margin-bottom: 10px;
-    height: 60px;
-}
-header .advantage li h5{
-    color: white;
-    border-left: 3px solid #f29b76;
-    border-right: 3px solid #f29b76;
-    width: 120px;
-    font-size: 18px;
-    margin: 0 auto;
-    font-weight: 400;
-}
-header .advantage li span{
-    color: white;
-    margin-top: 10px;
-    display: block;
-    font-size: 14px;
+@media screen and (max-width: 450px){
+    .none{
+        display: none;
+    }
+    header{
+        width: 100%;
+    }
+    header .heads{
+        width: 100%;
+        background-color: rgba(48,09,12,0.1);
+    }
+    header .heads .head{
+        overflow: hidden;
+        width: 100%;
+        padding: 10px 0;
+    }
+    header .heads .head .head_left{
+        display: none;
+    }
+    header .heads .head .head_nav ul{
+        overflow: hidden;
+        margin-bottom: 0;
+        width: 250px;
+        height: 35px;
+    }
+    header .heads .head .head_nav ul li{
+        float: left;
+        text-align: center;
+        margin-right: 10px;
+        padding: 3px;
+    }
+    header .heads .head .head_nav ul li a{
+        overflow: hidden;
+    }
+    header .heads .head .head_nav ul li:hover{
+        background-color: white;
+        border-radius: 5px;
+        border-bottom: 3px solid orange;
+    }
+    header .heads .head .head_nav ul li span:first-child{
+        display: none;
+    }
+    header .heads .head .head_nav ul li span:last-child{
+        color: #8a5742;
+        display: block;
+    }
+    header .heads .head .head_right a{
+        display: inline-block;
+        border: 1px dashed #8a5742;
+        padding: 2px 8px;
+        margin-right: 10px;
+        color: #8a5742;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    header .heads .head .head_right .chacked{
+        color: black;
+        background-color: #ae9c92;
+    }
+    header .banner img{
+        width: 100%;
+    }
+    header .banner_text{
+        position: absolute;
+        top:40%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        background-color: rgba(230,230,230,0.6);
+        border-radius: 20px;
+        padding: 20px;
+        color: #b56728;
+    }
+    header .banner_text span{
+        font-size: 48px;
+    }
+    header .banner_text h2{
+        font-size: 56px;
+    }
+    header .advantage{
+        background-color: rgba(186,150,130,0.7);
+        overflow: hidden;
+        display: inline-block;
+        width: 1100px;
+        padding: 40px 100px;
+        bottom: -7%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        border-radius: 20px;
+    }
+    header .advantage li{
+        float: left;
+        margin-right: 75px;
+        text-align: center;
+    }
+    header .advantage li:last-child{
+        margin-right: 0;
+    }
+    header .advantage li img{
+        margin-bottom: 10px;
+        height: 60px;
+    }
+    header .advantage li h5{
+        color: white;
+        border-left: 3px solid #f29b76;
+        border-right: 3px solid #f29b76;
+        width: 120px;
+        font-size: 18px;
+        margin: 0 auto;
+        font-weight: 400;
+    }
+    header .advantage li span{
+        color: white;
+        margin-top: 10px;
+        display: block;
+        font-size: 14px;
+    }
+    section{
+        width: 100%;
+    }
+    section .team .team_title{
+        color: #c28a60;
+        width: 50%;
+        margin: 0 auto;
+    }
+    section .team .team_title h3{
+        text-align: center;
+        letter-spacing: 5px;
+        margin-bottom: 25px;
+    }
+    section .team .team_title h3 span{
+        border-bottom: 4px solid #a68c82;
+        padding-bottom: 5px;
+    }
+    section .team .team_title p{
+        letter-spacing: 2px;
+    }
+    section .team .team_one{
+        padding: 20px 100px;
+        background: url("../images/team_bg01.png") no-repeat;
+        background-position: right;
+        background-size: contain;
+        overflow: hidden;
+    }
+    section .team .team_one img{
+        width: 500px;
+    }
+    section .team .team_one .team_contents{
+        margin-left: 125px;
+        padding-top: 50px;
+        overflow: hidden;
+        text-align: right;
+    }
+    section .team .team_one .team_contents p{
+        width: 410px;
+        font-size: 16px;
+        text-align: left;
+        letter-spacing: 2px;
+    }
+    section .team .team_one .team_contents h3{
+        color: #c28a60;
+        font-size: 20px;
+        padding: 8px 0;
+    }
+    section .team .team_one .team_contents h3:hover{
+        background: url("../images/team_title_bg01.png") no-repeat;
+        background-position: right;
+        background-size: contain;
+        transition: 1s;
+    }
 }

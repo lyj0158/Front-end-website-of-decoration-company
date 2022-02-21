@@ -14,7 +14,7 @@ a{
 .right{
     float: right;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px){
     header{
         width: 100%;
         position: relative;
@@ -432,8 +432,13 @@ a{
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
         max-width: 1280px;
     }
+    @media (min-width: 1400px){
+        .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+            max-width: 100%;
+        }
+    }
     footer{
-        padding: 50px 100px !important;
+        padding: 50px 200px !important;
         background-color: #94624d;
     }
     footer .row ul{
@@ -494,7 +499,7 @@ a{
 }
 @media screen and (max-width: 450px){
     .none{
-        display: none;
+        display: none !important;
     }
     header{
         width: 100%;
@@ -616,51 +621,283 @@ a{
     section .team .team_title{
         color: #c28a60;
         width: 50%;
-        margin: 0 auto;
+        margin: 20px auto;
     }
     section .team .team_title h3{
         text-align: center;
         letter-spacing: 5px;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
     section .team .team_title h3 span{
         border-bottom: 4px solid #a68c82;
         padding-bottom: 5px;
     }
-    section .team .team_title p{
-        letter-spacing: 2px;
-    }
     section .team .team_one{
-        padding: 20px 100px;
+        padding: 10px;
         background: url("../images/team_bg01.png") no-repeat;
         background-position: right;
         background-size: contain;
         overflow: hidden;
     }
     section .team .team_one img{
-        width: 500px;
+        width: 200px;
     }
     section .team .team_one .team_contents{
-        margin-left: 125px;
-        padding-top: 50px;
+        margin-left: 10px;
+        padding-top: 10px;
         overflow: hidden;
         text-align: right;
     }
-    section .team .team_one .team_contents p{
-        width: 410px;
-        font-size: 16px;
-        text-align: left;
-        letter-spacing: 2px;
-    }
     section .team .team_one .team_contents h3{
         color: #c28a60;
-        font-size: 20px;
-        padding: 8px 0;
+        font-size: 18px;
+        padding: 2px 0;
     }
     section .team .team_one .team_contents h3:hover{
         background: url("../images/team_title_bg01.png") no-repeat;
         background-position: right;
         background-size: contain;
         transition: 1s;
+    }
+    .btn4 {
+        width: 100px;
+        height: 40px;
+        color: white;
+        background-color: #f29b76;
+        border-radius: 30px;
+        border: 3px solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: btn4Ani 2s linear infinite;
+    }
+    section .team .team_two{
+        padding: 10px;
+        background: url("../images/team_bg02.png") no-repeat;
+        background-position: left;
+        background-size: contain;
+        overflow: hidden;
+    }
+    section .team .team_two img{
+        width: 200px;
+    }
+    section .team .team_two .team_contents{
+        margin-left: 10px;
+        padding-top: 10px;
+        overflow: hidden;
+        text-align: right;
+    }
+    section .team .team_two .team_contents h3{
+        color: #c28a60;
+        font-size: 18px;
+        padding: 2px 0;
+        background-position: right;
+    }
+    section .team .team_two .team_contents h3:hover{
+        background: url("../images/team_title_bg02.png") no-repeat;
+        background-position: left;
+        background-size: contain;
+        transition: 1s;
+    }
+    section .service{
+        text-align: center;
+        background-color: #f1f1f1;
+        overflow: hidden;
+        padding: 20px 0;
+        margin-top: -1px;
+    }
+    section .service .service_title h3{
+        color: #ae7862;
+    }
+    section .service .service_title p{
+        color: #63321e;
+    }
+    section .service .service_title p span{
+        border-bottom: 3px solid #ae7862;
+        padding-bottom: 5px;
+    }
+    section .service ul{
+        overflow: hidden;
+        padding: 0;
+    }
+    section .service ul li{
+        float: left;
+    }
+    .view {
+        width: 355px;
+        height: 240px;
+        margin: 10px;
+        float: left;
+        border: 10px solid #fff;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        box-shadow: 1px 1px 2px #e6e6e6;
+        cursor: default;
+        background: #fff url(../images/case_01.png) no-repeat center center
+    }
+    .view .mask, .view .content {
+        width: 355px;
+        height: 240px;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0
+    }
+    .view img {
+        display: block;
+        position: relative
+    }
+    .view h2 {
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        font-size: 17px;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.8);
+        margin: 20px 0 0 0
+    }
+    .view p {
+        font-family: Georgia, serif;
+        font-style: italic;
+        font-size: 12px;
+        position: relative;
+        color: #fff;
+        padding: 10px 20px 20px;
+        text-align: center
+    }
+    .view a.info {
+        display: inline-block;
+        text-decoration: none;
+        padding: 7px 14px;
+        background: #000;
+        color: #fff;
+        text-transform: uppercase;
+        box-shadow: 0 0 1px #000
+    }
+    .view a.info:hover {
+        box-shadow: 0 0 5px #000
+    }
+    .view-fifth img {
+        transition: all 0.3s ease-in-out;
+    }
+    .view-fifth .mask {
+        background-color: rgba(0,0,0,0.6);
+        transform: translateX(-350px);
+        opacity: 1;
+        transition: all 0.4s ease-in-out;
+    }
+    .view-fifth h2{
+        background: rgba(255, 255, 255, 0.5);
+        color: #000;
+        box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
+    }
+    .view-fifth p{
+        opacity: 0;
+        color: white;
+        transition: all 0.2s linear;
+    }
+    .view-fifth:hover .mask {
+        transform: translateX(0px);
+    }
+    .view-fifth:hover img {
+        transform: translateX(350px);
+        transition-delay: 0.1s;
+    }
+    .view-fifth:hover p{
+        opacity: 1;
+        transition-delay: 0.4s;
+    }
+    section .service ul li a{
+        overflow: hidden;
+    }
+    section .service ul li img{
+        width: 350px;
+    }
+    section .service ul li a h4{
+        color: #63321e;
+        line-height: 38px;
+        font-size: 16px;
+    }
+    section .service ul li a h4 span{
+        border-bottom: 3px solid #ae7862;
+        padding-bottom: 3px;
+    }
+
+    section .case{
+        background: url("../images/case_bg.png") no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+    section .case .cases{
+        background-color: rgba(0,0,0,0.6);
+        padding-top: 15px;
+        padding-bottom: 1px;
+        color: white;
+    }
+    section .case .cases h2{
+        font-size: 24px;
+        letter-spacing: 2px;
+        line-height: 24px;
+    }
+    section .case .cases p{
+        font-size: 16px;
+        font-weight: 100;
+        line-height: 16px;
+        letter-spacing: 2px;
+    }
+    footer{
+        background-color: #94624d;
+    }
+    footer .row ul{
+        overflow: hidden;
+        border-right: 1px solid white;
+    }
+    footer .row ul li{
+        float: left;
+        margin-right: 10px;
+    }
+    footer .row ul li:last-child{
+        margin-right: 0;
+    }
+    footer .row a {
+        color: white;
+        display: block;
+    }
+    footer .row .contact{
+        margin-left: 10px;
+        text-align: center;
+    }
+    footer .row .contact .consultation .con_text{
+        margin: 10px;
+        padding: 2px 5px;
+        display: inline-block;
+    }
+    footer .row .contact .consultation .con_text:hover{
+        background: black;
+        border-radius: 5px;
+    }
+    footer .row .contact .consultation a h2{
+        font-size: 26px;
+    }
+    footer .row .contact .consultation a p{
+        font-size: 12px;
+    }
+    footer .row .contact .qrcode{
+        margin-left: 10px;
+        color: white;
+        padding-bottom: 50px;
+    }
+    footer .row .contact .qrcode div{
+        width: 150px;
+        text-align: center;
+        line-height: 150px;
+        border-radius: 10px;
+        margin: 10px auto;
+        background-color: rgba(0,0,0,0.1);
+    }
+    footer .row .contact .qrcode span{
+        letter-spacing: 3px;
     }
 }

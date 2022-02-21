@@ -1,100 +1,204 @@
-.box{
-  height: 320px;
-  width: 440px;
-  overflow: hidden;
-  position: relative;
-  z-index:1;
-  transition: all .5s;
-  img{
-    transition: all .5s ease;
-  }
-  .title{
-    color: #1e272e;
-    font-size: 23px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0 0 3px 0;
-  }
-  .post{
-    font-size: 16px;
-    text-transform: capitalize;
-    display: block;
-    float: right;
-    margin-top: 8px;
-    margin-right: 2px;
-  }
-  .box-content{
-    height: 100px;
-    width: auto;
-    position: absolute;
-    z-index: 999;
-    top: 30%;
-    right: -150%;
-    transition: all 0.5s;
-    .icon{
-      display: inline-block;
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      background-color: #1e272e;
-      position:absolute;
-      top:-3px;
-      right: -40px;
-      transition: all .3s;
-      i{
-        position: absolute;
-        top: 7px;
-        left: 7px;
-        clear: both;
-        font-size: 15px;
-        color: #fff;
-      }
-      &:hover{
-        background-color: #fff;
-        border-radius: 10%;
-        box-shadow: 0 0 5px #1e272e inset;
+@media screen and (min-width: 1200px){
+  .box{
+    height: 320px;
+    width: 440px;
+    overflow: hidden;
+    position: relative;
+    z-index:1;
+    transition: all .5s;
+    img{
+      transition: all .5s ease;
+    }
+    .title{
+      color: #1e272e;
+      font-size: 23px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0 0 3px 0;
+    }
+    .post{
+      font-size: 16px;
+      text-transform: capitalize;
+      display: block;
+      float: right;
+      margin-top: 8px;
+      margin-right: 2px;
+    }
+    .box-content{
+      height: 100px;
+      width: auto;
+      position: absolute;
+      z-index: 999;
+      top: 30%;
+      right: -150%;
+      transition: all 0.5s;
+      .icon{
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background-color: #1e272e;
+        position:absolute;
+        top:-3px;
+        right: -40px;
+        transition: all .3s;
         i{
-          color: #1e272e;
+          position: absolute;
+          top: 7px;
+          left: 7px;
+          clear: both;
+          font-size: 15px;
+          color: #fff;
+        }
+        &:hover{
+          background-color: #fff;
+          border-radius: 10%;
+          box-shadow: 0 0 5px #1e272e inset;
+          i{
+            color: #1e272e;
+          }
         }
       }
     }
-  }
-  &:hover{
-    box-shadow: 1px 2px 10px #999;
-    img{
-      transform: scale(1.2)
+    &:hover{
+      box-shadow: 1px 2px 10px #999;
+      img{
+        transform: scale(1.2)
+      }
+      .box-content{ right:18% }
     }
-    .box-content{ right:18% }
+  }
+  .box:before,.box:after{
+    content:"";
+    background:radial-gradient(circle at 23% 70%,rgba(255,255,255,0.8),#fff 30%);
+    width: 150%;
+    height: 150%;
+    opacity: 0;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -10.5%;
+    right: -168%;
+    z-index: 1;
+    transition: all 0.35s;
+  }
+  .box:before{
+    top: -188%;
+    left: -100%;
+  }
+  .box:hover:before{
+    background-color: rgba(255,255,255,0.5);
+    width: 65%;
+    height: 65%;
+    right: auto;
+    left: -15%;
+    top: -43%;
+    opacity: 0.5;
+  }
+  .box:hover:after{
+    top: -11.2%;
+    right: -90.3%;
+    opacity: 0.9;
   }
 }
-.box:before,.box:after{
-  content:"";
-  background:radial-gradient(circle at 23% 70%,rgba(255,255,255,0.8),#fff 30%);
-  width: 150%;
-  height: 150%;
-  opacity: 0;
-  transform: rotate(45deg);
-  position: absolute;
-  top: -10.5%;
-  right: -168%;
-  z-index: 1;
-  transition: all 0.35s;
-}
-.box:before{
-  top: -188%;
-  left: -100%;
-}
-.box:hover:before{
-  background-color: rgba(255,255,255,0.5);
-  width: 65%;
-  height: 65%;
-  right: auto;
-  left: -15%;
-  top: -43%;
-  opacity: 0.5;
-}
-.box:hover:after{
-  top: -11.2%;
-  right: -90.3%;
-  opacity: 0.9;
+@media screen and (max-width: 450px){
+  .box{
+    height: 131px;
+    width: 200px;
+    overflow: hidden;
+    position: relative;
+    z-index:1;
+    transition: all .5s;
+    img{
+      transition: all .5s ease;
+    }
+    .title{
+      color: #1e272e;
+      font-size: 23px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0 0 3px 0;
+    }
+    .post{
+      font-size: 16px;
+      text-transform: capitalize;
+      display: block;
+      float: right;
+      margin-top: 8px;
+      margin-right: 2px;
+    }
+    .box-content{
+      height: 100px;
+      width: auto;
+      position: absolute;
+      z-index: 999;
+      top: 30%;
+      right: -150%;
+      transition: all 0.5s;
+      .icon{
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background-color: #1e272e;
+        position:absolute;
+        top:-3px;
+        right: -40px;
+        transition: all .3s;
+        i{
+          position: absolute;
+          top: 7px;
+          left: 7px;
+          clear: both;
+          font-size: 15px;
+          color: #fff;
+        }
+        &:hover{
+          background-color: #fff;
+          border-radius: 10%;
+          box-shadow: 0 0 5px #1e272e inset;
+          i{
+            color: #1e272e;
+          }
+        }
+      }
+    }
+    &:hover{
+      box-shadow: 1px 2px 10px #999;
+      img{
+        transform: scale(1.2)
+      }
+      .box-content{ right:18% }
+    }
+  }
+  .box:before,.box:after{
+    content:"";
+    background:radial-gradient(circle at 23% 70%,rgba(255,255,255,0.8),#fff 30%);
+    width: 150%;
+    height: 150%;
+    opacity: 0;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -10.5%;
+    right: -168%;
+    z-index: 1;
+    transition: all 0.35s;
+  }
+  .box:before{
+    top: -188%;
+    left: -100%;
+  }
+  .box:hover:before{
+    background-color: rgba(255,255,255,0.5);
+    width: 65%;
+    height: 65%;
+    right: auto;
+    left: -15%;
+    top: -43%;
+    opacity: 0.5;
+  }
+  .box:hover:after{
+    top: -11.2%;
+    right: -90.3%;
+    opacity: 0.9;
+  }
 }

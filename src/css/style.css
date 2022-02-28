@@ -52,16 +52,17 @@ a{
     header .heads .head .head_nav ul li{
         float: left;
         text-align: center;
-        padding: 30px 20px;
+        padding: 20px 10px;
     }
     header .heads .head .head_nav ul li a{
         overflow: hidden;
+        display: block;
+        padding: 10px;
     }
-    header .heads .head .head_nav ul li:hover{
-        background-color: white;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        border-bottom: 3px solid orange;
+    header .heads .head .head_nav ul li a:hover{
+        background-color: rgba(255,255,255,0.6);
+        padding: 10px;
+        border-radius: 5px;
     }
     header .heads .head .head_nav ul li span:first-child{
         color: #ae9c92;
@@ -461,7 +462,21 @@ a{
     }
     footer .row ul li a{
         display: block;
+        padding: 5px;
         line-height: 28px;
+    }
+    footer .row ul li h3 a:first-child{
+        background-image: none;
+    }
+    footer .row ul li a:hover{
+        background: rgba(255,255,255,0.9);
+        padding: 5px;
+        color: #763410;
+        border-radius: 5px;
+        background-image: url("../images/about_bg.png");
+        background-position: 75px center;
+        background-repeat: no-repeat;
+        background-size: 16px;
     }
     footer .row .contact{
         margin-left: 50px;
@@ -472,7 +487,14 @@ a{
     }
     footer .row .contact .consultation .con_text{
         margin-bottom: 20px;
-        display: block;
+        display: inline-block;
+        padding: 3px;
+    }
+    footer .row .contact .consultation .con_text:hover{
+        background: black;
+        color: white;
+        border-radius: 5px;
+        padding: 3px;
     }
     footer .row .contact .consultation a h2{
         font-size: 38px;
@@ -724,7 +746,7 @@ a{
         float: left;
     }
     .view {
-        width: 355px;
+        width: 335px;
         height: 240px;
         margin: 10px;
         float: left;
@@ -734,10 +756,10 @@ a{
         text-align: center;
         box-shadow: 1px 1px 2px #e6e6e6;
         cursor: default;
-        background: #fff url(../images/case_01.png) no-repeat center center
+        /*background: #fff url(../images/case_01.png) no-repeat center center*/
     }
     .view .mask, .view .content {
-        width: 355px;
+        width: 335px;
         height: 240px;
         position: absolute;
         overflow: hidden;
@@ -784,7 +806,7 @@ a{
     }
     .view-fifth .mask {
         background-color: rgba(0,0,0,0.6);
-        transform: translateX(-350px);
+        transform: translateX(-335px);
         opacity: 1;
         transition: all 0.4s ease-in-out;
     }
@@ -802,18 +824,22 @@ a{
         transform: translateX(0px);
     }
     .view-fifth:hover img {
-        transform: translateX(350px);
+        transform: translateX(335px);
         transition-delay: 0.1s;
     }
     .view-fifth:hover p{
         opacity: 1;
         transition-delay: 0.4s;
     }
+    section .service ul li{
+        margin: 5px 20px;
+    }
     section .service ul li a{
         overflow: hidden;
     }
     section .service ul li img{
-        width: 350px;
+        width: 100%;
+        height: 100%;
     }
     section .service ul li a h4{
         color: #63321e;
